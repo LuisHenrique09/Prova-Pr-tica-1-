@@ -25,51 +25,34 @@
 
     <nav class="navbar bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Conversor de Unidades</a>
+            <a class="navbar-brand" href="#">Conversor de Moedas</a>
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
     <form class="p-3">
 
-        <div class="my-3">
-            <label class="form-label">Cotação de Real para Dólar:</label>
-            <input class="form-control" type="text" placeholder="Valor" id="dolar">
+        <div class="col-6 bg-light my-5">
+            <label class="form-label">Valores:</label>
+            <input class="form-control" type="text" placeholder="Valor" id="input">
+            <label class="form-label">Resultados:</label>
+            <input class="form-control" type="text" placeholder="Resultado" id="result">
         </div>
 
-        <div class="my-3">
-            <label class="form-label">Cotação de Real para Euro:</label>
-            <input class="form-control" type="text" placeholder="Valor" id="euro">
-        </div>
+        <div class="col-6 bg-light my-5">
+            <label class="form-label">Escolha as Unidades:</label>
+            <select id="inputType" class="form-select" aria-label="Default select example">
+                <option value="real">Real</option>
+            </select>
 
-        <div class="my-3">
-            <label class="form-label">Cotação de Real para Libra:</label>
-            <input class="form-control" type="text" placeholder="Valor" id="libra">
-        </div>
-
-        <div class="my-3">
-            <label class="form-label">Informe o valor em R$ a ser convertido:</label>
-            <input class="form-control" type="text" placeholder="Valor" id="inputNum">
-        </div>
-
-        <div class="my-3">
-            <button type="button" class="btn btn-outline-success btn-lg" onclick="resultado()">
-              Verificar
-            </button>
-          </div>
-
-        <div class="my-3">
-            <label class="form-label">R$ em dólar</label>
-            <input class="form-control" type="text" placeholder="Resultado" id="resultdolar" disabled>
-        </div>
-
-        <div class="my-3">
-            <label class="form-label">R$ em euro</label>
-            <input class="form-control" type="text" placeholder="Resultado" id="resulteuro" disabled>
-        </div>
-
-        <div class="my-3">
-            <label class="form-label">R$ em libra</label>
-            <input class="form-control" type="text" placeholder="Resultado" id="resultlibra" disabled>
+            <select id="resultType" class="form-select" aria-label="Default select example">
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                <option value="libra">Libra</option>
+            </select>
         </div>
 
     </form>
